@@ -1,8 +1,37 @@
 var __bgmTgt = '';
 var __seTgt = '';
+var __scrollTgt = 'html,body';
+var __scrollTgtWebkit = 'body';
+var __scrollTgtMoz = 'html';
+
 
 $(function(){
-	$("html").niceScroll();
+	var scrolly = 0;
+	var speed = 200;
+	$('html').mousewheel(function(event, mov) {
+		if(jQuery.browser.webkit){
+			if (mov > 0) {
+				scrolly =  $(__scrollTgtWebkit).scrollTop() - speed;
+			}
+			else if (mov < 0) {
+				scrolly =  $(__scrollTgtWebkit).scrollTop() + speed;
+			}
+		} else {
+			if (mov > 0) {
+				scrolly =  $(__scrollTgtMoz).scrollTop() - speed;
+			}
+			else if (mov < 0) {
+				crolly =  $(__scrollTgtMoz).scrollTop() + speed;
+			}
+		}
+		$(__scrollTgt)
+			.stop()
+			.animate({scrollTop: scrolly}, 'slow', $.easie(0,0,0,1));
+			//イージングプラグイン使わない場合
+			//.animate({ scrollTop: scrolly }, 'normal');
+		return false;
+	});
+
 	
 	if ($('#navBlockIn').size()) {
 		$('#navBlockIn a').hover(
@@ -14,7 +43,6 @@ $(function(){
 			}
 		);
 	}
-	
 });
 
 function setDoorPos(){
@@ -177,6 +205,10 @@ function backnumberOpen(tgt){
 		$('#backnumberWindow').fadeIn('fast',function(){
 			//alert(Number($('#_p'+tgt).position().top - 40));
 			$(this).scrollTop(Number($('#_p'+tgt).position().top - 200));
+			$('body').css({'overflow':'hidden'});
+			__scrollTgt = '#backnumberWindow';
+			__scrollTgtWebkit = '#backnumberWindow';
+			__scrollTgtMoz = '#backnumberWindow';
 		});
 	}
 	else {
@@ -187,6 +219,10 @@ function backnumberOpen(tgt){
 
 function backnumberClose(){
 	$('#backnumberWindow').hide();
+	__scrollTgt = 'html,body';
+	__scrollTgtWebkit = 'body';
+	__scrollTgtMoz = 'html';
+	$('body').css({'overflow':'auto'});
 }
 
 function jumpBackNumber(tgt){

@@ -19,13 +19,14 @@
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="stylesheet" type="text/css" media="screen,print" href="/css/common.css" />
 <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script src="/js/jquery.easing.1.3.js"></script>
-<script src="/js/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="/js/jquery.easie.js"></script>
 <script src="/js/common.js"></script>
 <script type="text/javascript">
 $(function() {
-	$("html").niceScroll();
+
 	__bgmTgt = $('#bgm');
 	__bgmTgt[0].load();
 	__bgmTgt[0].volume =0.5;
@@ -271,7 +272,7 @@ $(function() {
            <p class="n">
              <img src="/link/images/link_11.png">
            </p>
-           <a href="http://www.gentosha.jp/" target="_blank" title="幻冬舎plus">
+           <a href="http://www.gentosha.jp/search/author/%E7%9F%B3%E7%94%B0%E3%82%86%E3%82%8A%E5%AD%90" target="_blank" title="幻冬舎plus">
              <span class="alp0">幻冬舎plus</span>
            </a>
          </li>

@@ -19,13 +19,14 @@
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="stylesheet" type="text/css" media="screen,print" href="/css/common.css" />
 <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script src="/js/jquery.easing.1.3.js"></script>
-<script src="/js/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="/js/jquery.easie.js"></script>
 <script src="/js/common.js"></script>
 <script type="text/javascript">
 $(function() {
-	$("html").niceScroll();
+
 	__bgmTgt = $('#bgm');
 	__bgmTgt[0].load();
 	__bgmTgt[0].play();
@@ -115,7 +116,7 @@ $(function() {
         <h3>2015</h3>
         </div>
         <ul class="typeB clearfix">
-        <li>
+        <li class="new">
           <p>
             <em>October</em>
             <span>テレビ朝日 ドラマ特別企画『ハッピー・リタイアメント』</span>
@@ -761,8 +762,8 @@ $(function() {
          <h2>Movie</h2>
         </div>
      
-        <ul class="typeB nonMonth clearfix">
-          <li><p><em>2016</em><span>平川雄一朗監督作品 『僕だけがいない街』</span></p></li>
+        <ul class="typeB clearfix">
+          <li class="new"><p><em>2016</em><span>平川雄一朗監督作品 『僕だけがいない街』</span></p></li>
           <li><p><em>2015</em><span>羽住英一郎監督作品 『劇場版 MOZU』</span></p></li>
           <li><p><em>2015</em><span>堤幸彦監督作品 『悼む人』</span></p></li>
           <li><p><em>2011</em><span>宮崎吾朗監督作品 『コクリコ坂から』（アニメーション映画） </span></p></li>
@@ -797,7 +798,7 @@ $(function() {
          <h2>Stage</h2>
         </div>
      
-        <ul class="typeB nonMonth clearfix">
+        <ul class="typeB clearfix">
           <li><p><em>2011</em><span>三谷幸喜作・演出『国民の映画』東京・パルコ劇場他</span></p></li>
           <li><p><em>2007</em><span>明治座12月公演 『眉山』 （原作：さだまさし）</span></p></li>
           <li><p><em>2005</em><span>三谷幸喜作・演出『12人の優しい日本人』東京・パルコ劇場他</span></p></li>
@@ -811,7 +812,7 @@ $(function() {
          <h2>Book</h2>
         </div>
      
-        <ul class="typeB nonMonth clearfix">
+        <ul class="typeB clearfix">
           <li><p><em>2013</em><span>『はなちゃんの夏休み。』（東京糸井重里事務所刊）</span></p></li>
           <li><p><em>2008</em><span>『石田ゆり子 京の手習いはじめ』（講談社刊）</span></p></li>
           <li><p><em>2006</em><span>エッセイ 『天然日和』 文庫版 （幻冬舎刊）</span></p></li>
@@ -827,7 +828,7 @@ $(function() {
          <h2>Narration (DVD/CD)</h2>
         </div>
 
-        <ul class="typeB nonMonth clearfix">
+        <ul class="typeB clearfix">
           <li><p><em>2006</em><span>ＤＶＤ 『白熊ピース～日本初・人工哺育の全記録～』</span></p></li>
           <li><p><em>2004</em><span>ＣＤ 『盲導犬クイールの一生』	</span></p></li>
         </ul>
@@ -914,30 +915,60 @@ $(function() {
         <div class="listHeader">
          <h2>CM</h2>
         </div>
-     
+
+        <div class="listHeader">
+        <h3>2016</h3>
+        </div>
+
         <ul class="typeB nonMonth clearfix">
-          <li><p><em>2009</em><span>花王 【ソフィーナ ボーテ】</span></p></li>
-          <li><p><em>2009</em><span>コスモスイニシア</span></p></li>
-          <li><p><em>2008</em><span>ローソン</span></p></li>
-          <li><p><em>2008</em><span>三菱マテリアル</span></p></li>
-          <li><p><em>2008</em><span>エコロードキャンペーンイメージキャラクター</span></p></li>
-          <li><p><em>2008</em><span>アサヒビール 【ニッカウヰスキーのニッカオールモルト】</span></p></li>
-          <li><p><em>2008</em><span>トヨタ自動車 【ポルテ】</span></p></li>
-          <li><p><em>2008</em><span>ＳＯＮＹ 【Handycam HC90・DVD403】（ナレーション）ほか</span></p></li>
-          <li><p><em>2008</em><span>大正製薬 【Livitaシリーズ】</span></p></li>
-          <li><p><em>2008</em><span>三菱自動車 【グランディス】</span></p></li>
-          <li><p><em>2008</em><span>花王　【メリット】【クリアクリーン】【ビオレU】【チェック】【リーゼ】ほか</span></p></li>
-          <li><p><em>2008</em><span>松下電器産業 【ブレンビー】【ミデオ】【ヨコヅナ】【ワイドブレンビー】ほか</span></p></li>
-          <li><p><em>2008</em><span>明治製菓 【ひとくち果汁グミ】</span></p></li>
-          <li><p><em>2008</em><span>サントリー 【ヨーグルトフィズ】</span></p></li>
-          <li><p><em>2008</em><span>味の素 【ほんだし煮物上手】</span></p></li>
-          <li><p><em>2008</em><span>トヨタ自動車 【スプリンター】</span></p></li>
-          <li><p><em>2008</em><span>サッポロ 【ブロイ】</span></p></li>
-          <li><p><em>2008</em><span>ライオン 【植物物語】【PCクリニカ】</span></p></li>
-          <li><p><em>2008</em><span>中央三井信託銀行</span></p></li>
-          <li><p><em>2008</em><span>十八銀行（長崎）</span></p></li>
-          <li><p><em>1987</em><span>全日空 『沖縄キャンペーン』にてデビュー	</span></p></li>
+          <li><p><span>リクルート【ホットペッパービューティー】</span></p></li>
+          <li><p><span>明治【アミノコラーゲンヨーグルト】</span></p></li>
+          <li><p><span>株式会社中央住宅【POLUS（ポラス）】（ナレーション）</span></p></li>
+          <li><p><span>大和証券</span></p></li>
         </ul>
+
+        <div class="listHeader">
+        <h3>〜2015</h3>
+        </div>
+        <ul class="typeB nonMonth clearfix">
+
+          <li><p><span>P&amp;G【パンテーン】</span></p></li>
+          <li><p><span>オルビス【エクセレントエンリッチシリーズ】</span></p></li>
+          <li><p><span>武田薬品工業 【アリナミンシリーズ】</span></p></li>
+          <li><p><span>スバル【レガシー EyeSignt】</span></p></li>
+          <li><p><span>キッコーマン 【うちのごはんシリーズ】</span></p></li>
+          <li><p><span>花王 【ソフィーナ ボーテ】</span></p></li>
+          <li><p><span>日本郵船 "NYK Cool Earth Project"イメージキャラクター</span></p></li>
+          <li><p><span>コスモスイニシア</span></p></li>
+          <li><p><span>ローソン</span></p></li>
+          <li><p><span>三菱マテリアル</span></p></li>
+          <li><p><span>エコロードキャンペーンイメージキャラクター</span></p></li>
+          <li><p><span>アサヒビール 【ニッカウヰスキーのニッカオールモルト】</span></p></li>
+          <li><p><span>トヨタ自動車 【ポルテ】</span></p></li>
+          <li><p><span>ＳＯＮＹ 【Handycam HC90・DVD403】（ナレーション）ほか</span></p></li>
+          <li><p><span>大正製薬 【Livitaシリーズ】</span></p></li>
+          <li><p><span>三菱自動車 【グランディス】</span></p></li>
+          <li><p><span>花王 【メリット】【クリアクリーン】【ビオレU】【チェック】【リーゼ】ほか</span></p></li>
+          <li><p><span>松下電器産業 【ブレンビー】【ミデオ】【ヨコヅナ】【ワイドブレンビー】ほか</span></p></li>
+          <li><p><span>明治製菓 【ひとくち果汁グミ】</span></p></li>
+          <li><p><span>サントリー 【ヨーグルトフィズ】</span></p></li>
+          <li><p><span>味の素 【ほんだし煮物上手】</span></p></li>
+          <li><p><span>トヨタ自動車 【スプリンター】</span></p></li>
+          <li><p><span>サッポロ 【ブロイ】</span></p></li>
+          <li><p><span>ライオン 【植物物語】【PCクリニカ】</span></p></li>
+          <li><p><span>中央三井信託銀行</span></p></li>
+          <li><p><span>十八銀行（長崎）</span></p></li>
+          <li><p><span>ほか（順不同）</span></p></li>
+        </ul>
+
+        <div class="listHeader">
+        <h3>1987</h3>
+        </div>
+
+        <ul class="typeB nonMonth clearfix">
+          <li><p><span>全日空 『沖縄キャンペーン』にてデビュー</span></p></li>
+        </ul>
+
       </div>
 
 

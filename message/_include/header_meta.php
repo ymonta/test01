@@ -15,12 +15,14 @@
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="stylesheet" type="text/css" media="screen,print" href="/css/common.css" />
 <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="/css/magnific-popup.css">
+<link rel="stylesheet" href="/css/baguetteBox.min.css">
 <link rel="stylesheet" href="/css/message.css">
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
 <script src="/js/jquery.easing.1.3.js"></script>
-<script src="/js/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="/js/jquery.easie.js"></script>
 <script src="/js/common.js"></script>
 <script src="/js/jQueryRotate.js"></script>
 <script src="/js/message.js"></script>
-<script src="/js/jquery.magnific-popup.js"></script> 
+<script src="/js/baguetteBox.min.js"></script>

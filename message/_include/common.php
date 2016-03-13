@@ -20,7 +20,7 @@ function p($sc, $tp, $cp) {
 	
 $res = <<< EOF
 <span class="phBlock2">
-<a class="ph" href="$src"><img src="$src"></a>
+<a class="ph" href="$src" data-caption="$cp"><img src="$src"></a>
 <em>$cp</em>
 </span>
 EOF;
@@ -46,7 +46,7 @@ function p2($sc, $tp, $cp) {
 	
 $res = <<< EOF
 <span class="phBlock $cls">
-<span class="ph"><img src="$src"></span>
+<a class="ph" href="$src" data-caption="$cp"><img src="$src"></a>
 <em>$cp</em>
 </span>
 EOF;

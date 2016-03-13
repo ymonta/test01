@@ -43,6 +43,8 @@ $(function(){
 		$(this).rotate(rt);
 	});
 
+	baguetteBox.run('.phBlock,.phBlock2');
+	/*
 	if($(window).width()<600){
 		$('.phBlock2 .ph').magnificPopup({ 
 				type: 'image'
@@ -53,4 +55,5 @@ $(function(){
 			$(this).addClass('disable').attr({'href':'javascript:void(0)'});
 		});
 	}
+	*/
 });

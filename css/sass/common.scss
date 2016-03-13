@@ -1505,6 +1505,7 @@ a:hover {
 				}
 			}
 		}
+		
 		&.typeB {
 			width:100%;
 			max-width:600px;
@@ -1522,6 +1523,16 @@ a:hover {
 					float:none;
 					max-width:none;
 					margin:0 0 15px 0;
+				}
+				&.new {
+					p {
+						span {
+							background-image:url(/images/iconNew01.png);
+							background-position:82px 1px;
+							background-repeat:no-repeat;
+							background-size:14px 14px;
+						}
+					}
 				}
 
 				p {
@@ -1561,6 +1572,28 @@ a:hover {
 							height:11px;
 							vertical-align:middle;
 							margin-left:2px;
+						}
+					}
+				}
+			}
+		}
+		&.typeB.typeW {
+			li {
+				p {
+					span {
+						padding-left:100px;
+						padding-right:100px;
+					}
+				}
+			}
+		}
+		@media only screen and (max-width: 640px) {
+			&.nonMonth {
+				li {
+					p {
+						span {
+							padding-left:0;
+							padding-right:0;
 						}
 					}
 				}

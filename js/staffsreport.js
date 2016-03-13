@@ -20,6 +20,7 @@ $(function(){
 		$('#respNavBlock,#respNavBlock_normal,#btn_resp_pagetop').queue([]).delay(2000).animate({'opacity':1},1500);
 	}
 
+	baguetteBox.run('.phBlock,.phBlock2');
 
 	$('.phBlock .ph img').load(function(){
 		setPhPos();
