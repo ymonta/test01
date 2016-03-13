@@ -6,6 +6,7 @@ var __scrollTgtMoz = 'html';
 
 
 $(function(){
+	
 	var scrolly = 0;
 	var speed = 200;
 	$('html').mousewheel(function(event, mov) {
